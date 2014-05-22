@@ -8,6 +8,16 @@
 
 #import "Stack.h"
 
-@implementation Stack
+@implementation Stack{
+     NSMutableArray *stack;
+}
+
+-(id)init{
+    self = [super init];
+    if(self!=nil){
+        stack = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
 
 @end

@@ -1,13 +1,9 @@
-//
-//  StackElementWithoutARC.h
-//  Stack
-//
-//  Created by Zalunin S on 23.04.14.
-//  Copyright (c) 2014 Zalunin S. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface StackElementWithoutARC : NSObject
+
+@property (nonatomic, retain) id  data;
+@property (nonatomic, retain) StackElementWithoutARC * previously;
+- (void)show;
 
 @end

@@ -1,13 +1,9 @@
-//
-//  QueueElementWithoutARC.h
-//  Stack
-//
-//  Created by Zalunin S on 23.04.14.
-//  Copyright (c) 2014 Zalunin S. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface QueueElementWithoutARC : NSObject
+
+@property (nonatomic, retain) id data;
+@property (nonatomic, retain) QueueElementWithoutARC * next;
+- (void)show;
 
 @end
